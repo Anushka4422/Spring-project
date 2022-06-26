@@ -1,0 +1,39 @@
+server:
+  port: 4747
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/javabatch
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+        exclude:
+        - beans
+      base-path: /myactuator
+endpoint:
+  shutdown:
+    enabled: true
+
+#logging:
+ # level:
+ #   com:
+ #    zensar: debug
+
+
+info:
+  createdBy: Anushka Singh
+  modified : 22June22      
+    
+    
+    
