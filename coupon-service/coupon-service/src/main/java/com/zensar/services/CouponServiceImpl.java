@@ -32,8 +32,8 @@ public class CouponServiceImpl implements CouponService {
 
 	@Override
 	public void deleteCoupon(String couponCode) {
+		// TODO Auto-generated method stub
 		couponRepository.deleteByCouponCode(couponCode);
-
 	}
 
 }
